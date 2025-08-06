@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Education & Student Services Portal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+
+    header {
+      background-color: #004aad;
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #00357a;
+      overflow: hidden;
+    }
+
+    nav a {
+      float: left;
+      color: white;
+      text-align: center;
+      padding: 12px 16px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background-color: #0058d1;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .services, .form-section {
+      background: white;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .services ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .services ul li {
+      background: #e8f0fe;
+      margin: 10px 0;
+      padding: 10px;
+      border-left: 4px solid #004aad;
+    }
+
+    form input, form select {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      box-sizing: border-box;
+    }
+
+    form button {
+      background-color: #004aad;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #00357a;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #004aad;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Education & Student Services Portal</h1>
+    <p>Empowering Students with Digital Access to Services</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#register">Register</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+
+    <!-- Services Section -->
+    <div class="services" id="services">
+      <h2>Available Services</h2>
+      <ul>
+        <li>Apply for Scholarships</li>
+        <li>Download Marksheets & Certificates</li>
+        <li>Skill Development Courses</li>
+        <li>Exam Registration Portal</li>
+        <li>Grievance Submission</li>
+      </ul>
+    </div>
+
+    <!-- Registration Form Section -->
+    <div class="form-section" id="register">
+      <h2>Student Registration</h2>
+      <form action="#" method="post">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+        <label for="email">Email ID</label>
+        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+
+        <label for="course">Select Course</label>
+        <select id="course" name="course" required>
+          <option value="">--Choose Course--</option>
+          <option value="bsc">B.Sc</option>
+          <option value="ba">B.A</option>
+          <option value="bcom">B.Com</option>
+          <option value="btech">B.Tech</option>
+        </select>
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+  </div>
+
+  <footer id="contact">
+    <p>&copy; 2025 Education & Student Services Portal | Contact: support@edu.gov.in</p>
+  </footer>
+
+</body>
+</html>
